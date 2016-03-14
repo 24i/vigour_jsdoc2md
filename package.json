@@ -1,0 +1,37 @@
+{
+  "name": "vigour-jsdoc2md",
+  "version": "1.0.0",
+  "description": "Converts jsdoc comment blocks to markdown",
+  "main": "lib/",
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/jsdoc2md.git"
+  },
+  "keywords": [
+    "vigour",
+    "vigour-doc",
+    "jsdoc",
+    "md",
+    "markdown",
+    "jsdoc2md"
+  ],
+  "author": "Vigour <dev@vigour.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/jsdoc2md/issues"
+  },
+  "homepage": "https://github.com/vigour-io/jsdoc2md#readme",
+  "contributors": [
+    "Shawn Inder <shawn@vigour.io>"
+  ],
+  "dependencies": {
+    "lodash.trim": "^4.2.0"
+  },
+  "engines": {},
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
