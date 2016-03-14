@@ -1,4 +1,6 @@
-*This repo is still in design phase and is currently unusable. Please check back later!*
+[![Build Status](https://travis-ci.org/vigour-io/jsdoc2md.svg?branch=master)](https://travis-ci.org/vigour-io/jsdoc2md)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![npm version](https://badge.fury.io/js/vigour-jsdoc2md.svg)](https://badge.fury.io/js/vigour-jsdoc2md)
 
 # jsdoc2md
 Converts jsdoc comment blocks to markdown
