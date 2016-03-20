@@ -38,6 +38,33 @@ Converts jsdoc comment blocks to markdown
 **this** {*Circle*}
 
 **param** {*number*} r The desired radius of the circle.`
+  ],
+  [
+    `/**
+ * @id theID
+ * @function theFunctionName
+ * ***Oh*** man this *function* does **so** many [things](http://things.com)!!!
+ * @param {string} text - Words, \`sentences\`, and more*
+ * @param {number} amount
+ * @param {boolean} isCool - always \`true\`
+ * @param {array} things All sorts of things
+ * @returns \`undefined\`, \`void 0\`, \`this.meh\`, you name it!
+ */`,
+    `**id** theID
+
+**function** theFunctionName
+
+***Oh*** man this *function* does **so** many [things](http://things.com)!!!
+
+**param** {*string*} text - Words, \`sentences\`, and more*
+
+**param** {*number*} amount
+
+**param** {*boolean*} isCool - always \`true\`
+
+**param** {*array*} things All sorts of things
+
+**returns** \`undefined\`, \`void 0\`, \`this.meh\`, you name it!`
   ]
 ]
 var len = testCases.length
