@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.org/vigour-io/jsdoc2md.svg?branch=master)](https://travis-ci.org/vigour-io/jsdoc2md)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![npm version](https://badge.fury.io/js/vigour-jsdoc2md.svg)](https://badge.fury.io/js/vigour-jsdoc2md)
+
 <!-- VDOC END -->
+
 # jsdoc2md
 Converts jsdoc comment blocks to markdown
 
@@ -16,7 +18,8 @@ Converts jsdoc comment blocks to markdown
 #### var markdown = jsdoc2md(jsdoc)
 
 Converts jsdoc comment blocks to markdown
-- **param** {*string*} jsdoc - the jsdoc comment block to convert
+- **jsdoc** (*string*) - the jsdoc comment block to convert
+
 <!-- VDOC END -->
 
 #### example
