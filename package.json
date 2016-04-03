@@ -1,6 +1,6 @@
 {
   "name": "vigour-jsdoc2md",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts jsdoc comment blocks to markdown",
   "main": "lib/",
   "scripts": {
