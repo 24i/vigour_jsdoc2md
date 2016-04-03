@@ -13,8 +13,9 @@ test('convertFunction', function (t) {
         ' * @param {string} force',
         ' * @arg energy Something',
         ' * @param strength - something',
-        ' * @argument {string} radiation - something again'],
-      '#### boom(power, force, energy, strength, radiation)'
+        ' * @argument {string} radiation - something again',
+        ' * @param richter {number} - makes less and less sence'],
+      '#### boom(power, force, energy, strength, radiation, richter)'
     ],
     // 1
     [
@@ -52,10 +53,11 @@ test('convertFunction', function (t) {
   t.plan(len)
   for (let i = 0; i < len; i += 1) {
     var parts = testCases[i][0][0].match(jsdoc2md.lineRE)
-    var tagName = parts[3]
-    var type = parts[5]
-    var rest = parts[6]
-    t.equals(convertFunction(testCases[i][0][0], 0, testCases[i][0], tagName, type, rest),
+    var tagName = parts[1]
+    var name = parts[2]
+    var type = parts[3]
+    var rest = parts[4]
+    t.equals(convertFunction(testCases[i][0][0], 0, testCases[i][0], tagName, name, type, rest),
       testCases[i][1],
       'test case i=' + i)
   }

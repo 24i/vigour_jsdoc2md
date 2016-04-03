@@ -18,8 +18,8 @@ test('jsdoc2md', function (t) {
       `#### var result = jsdoc2mdtest(jsdoc)
 
 Converts jsdoc comment blocks to markdown
-- **param** {*string*} jsdoc - the jsdoc comment block to convert
-- **returns** {*string*} result - the resulting markdown`
+- **jsdoc** (*string*) - the jsdoc comment block to convert
+- **returns** (*string*) result - the resulting markdown`
     ],
     // 1
     [
@@ -33,7 +33,7 @@ Converts jsdoc comment blocks to markdown
       `Creates an instance of Circle.
 - **constructor**
 - **this** {*Circle*}
-- **param** {*number*} r The desired radius of the circle.`
+- **r** (*number*) - The desired radius of the circle.`
     ],
     // 2
     [
@@ -50,10 +50,10 @@ Converts jsdoc comment blocks to markdown
       `#### var crazy = theFunctionName(text, amount, isCool, things)
 
 ***Oh*** man this *function* does **so** many [things](http://things.com)!!!
-- **param** {*string*} text - Words, \`sentences\`, and more*
-- **param** {*number*} amount
-- **param** {*boolean*} isCool - always \`true\`
-- **param** {*array*} things All sorts of things`
+- **text** (*string*) - Words, \`sentences\`, and more*
+- **amount** (*number*)
+- **isCool** (*boolean*) - always \`true\`
+- **things** (*array*) - All sorts of things`
     ],
     // 3
     [
@@ -76,7 +76,7 @@ Explodes`
       `#### var description = boom()
 
 Explodes
-- **returns** {*string*} description`
+- **returns** (*string*) description`
     ],
     // 5
     [
@@ -88,7 +88,7 @@ Explodes
       `#### var *string* = boom()
 
 Explodes
-- **returns** {*string*} - a description of the mushroom cloud`
+- **returns** (*string*) - a description of the mushroom cloud`
     ]
   ]
   var len = testCases.length

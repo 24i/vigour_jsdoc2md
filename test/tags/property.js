@@ -15,10 +15,11 @@ test('convertProperty', function (t) {
   t.plan(len)
   for (let i = 0; i < len; i += 1) {
     var parts = testCases[i][0].match(jsdoc2md.lineRE)
-    var tagName = parts[3]
-    var type = parts[5]
-    var rest = parts[6]
-    t.equals(convertProperty(testCases[i][0], 0, [testCases[i][0]], tagName, type, rest),
+    var tagName = parts[1]
+    var name = parts[2]
+    var type = parts[3]
+    var rest = parts[4]
+    t.equals(convertProperty(testCases[i][0], 0, [testCases[i][0]], tagName, name, type, rest),
       testCases[i][1],
       'test case i=' + i)
   }
