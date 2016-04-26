@@ -47,6 +47,27 @@ test('convertFunction', function (t) {
       [' * @function boom',
         ' * @returns {string}'],
       '#### var *string* = boom()'
+    ],
+    // 6
+    [
+      [' * @function boom',
+        ' * @param [radius]'],
+      '#### boom([radius])'
+    ],
+    // 7
+    [
+      [' * @function boom',
+        ' * @param rahh',
+        ' * @param [radius]'],
+      '#### boom(rahh [, radius])'
+    ],
+    // 8
+    [
+      [' * @function boom',
+        ' * @param rahh',
+        ' * @param [radius]',
+        ' * @param [macumba]'],
+      '#### boom(rahh [, radius, macumba])'
     ]
   ]
   var len = testCases.length
