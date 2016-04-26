@@ -68,6 +68,13 @@ test('convertFunction', function (t) {
         ' * @param [radius]',
         ' * @param [macumba]'],
       '#### boom(rahh [, radius, macumba])'
+    ],
+    // 9
+    [
+      [' * @function boom',
+        ' * @param [optional]',
+        ' * @param required'],
+      '#### boom([optional], required)'
     ]
   ]
   var len = testCases.length
