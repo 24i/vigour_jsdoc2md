@@ -59,15 +59,15 @@ test('convertFunction', function (t) {
       [' * @function boom',
         ' * @param rahh',
         ' * @param [radius]'],
-      '#### boom(rahh [, radius])'
+      '#### boom(rahh, [radius])'
     ],
     // 8
     [
       [' * @function boom',
         ' * @param rahh',
         ' * @param [radius]',
-        ' * @param [macumba]'],
-      '#### boom(rahh [, radius, macumba])'
+        ' * @param [opt]'],
+      '#### boom(rahh, [radius], [opt])'
     ],
     // 9
     [
@@ -75,6 +75,14 @@ test('convertFunction', function (t) {
         ' * @param [optional]',
         ' * @param required'],
       '#### boom([optional], required)'
+    ],
+    // 10
+    [
+      [' * @function boom',
+        ' * @param required',
+        ' * @param [optional]',
+        ' * @param required2'],
+      '#### boom(required, [optional], required2)'
     ]
   ]
   var len = testCases.length
