@@ -32,16 +32,16 @@ jsdoc2md(`
  * @function jsdoc2md
  * Converts jsdoc comment blocks to markdown
  * @param {string} jsdoc - the jsdoc comment block to convert
+ * @param {object} [options] - an object full of options
  * @returns {string} markdown - the resulting markdown
  */`)
 ```
 
 <p align="center">↓</p>
 
-> #### var markdown = jsdoc2md(jsdoc)
+> #### var markdown = jsdoc2md(jsdoc, [options])
 > Converts jsdoc comment blocks to markdown
 > - **jsdoc** (*string*) - the jsdoc comment block to convert
+> - **[options]** (*object*) - an object full of options
 >
 > - **returns** (*string*) markdown - the resulting markdown
-
-As you can see, it's doing the conversion in a most minimalistic fashion. Except from converting `@tag` to `**tag** :` and `{type}` to `{*type*}`  and removing the comment characters, it also removes the `@id` tag, which is non-standard and only used by [vigour-doc](https://github.com/vigour-io/doc).

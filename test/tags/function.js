@@ -47,6 +47,42 @@ test('convertFunction', function (t) {
       [' * @function boom',
         ' * @returns {string}'],
       '#### var *string* = boom()'
+    ],
+    // 6
+    [
+      [' * @function boom',
+        ' * @param [radius]'],
+      '#### boom([radius])'
+    ],
+    // 7
+    [
+      [' * @function boom',
+        ' * @param rahh',
+        ' * @param [radius]'],
+      '#### boom(rahh, [radius])'
+    ],
+    // 8
+    [
+      [' * @function boom',
+        ' * @param rahh',
+        ' * @param [radius]',
+        ' * @param [opt]'],
+      '#### boom(rahh, [radius], [opt])'
+    ],
+    // 9
+    [
+      [' * @function boom',
+        ' * @param [optional]',
+        ' * @param required'],
+      '#### boom([optional], required)'
+    ],
+    // 10
+    [
+      [' * @function boom',
+        ' * @param required',
+        ' * @param [optional]',
+        ' * @param required2'],
+      '#### boom(required, [optional], required2)'
     ]
   ]
   var len = testCases.length
