@@ -89,6 +89,22 @@ Explodes
 
 Explodes
 - **returns** (*string*) - a description of the mushroom cloud`
+    ],
+    // 6
+    [
+      `/**
+ * @id bla
+ * @function boom
+ * Explodes
+ * @param [options] {object} - options taken from the following
+   - one
+   - two`,
+      `#### boom([options])
+
+Explodes
+- **[options]** (*object*) - options taken from the following
+   - one
+   - two`
     ]
   ]
   var len = testCases.length
