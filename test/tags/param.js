@@ -12,7 +12,7 @@ test('convertParam', function (t) {
       "- **name** - this one doen't declare a type"],
     [' * @param name {type} - description',
       '- **name** (*type*) - description'],
-    ['* @param startTime {number|array} - start time for elapsed time calculation',
+    [' * @param startTime {number|array} - start time for elapsed time calculation',
       '- **startTime** (*number|array*) - start time for elapsed time calculation']
   ]
   var len = testCases.length
